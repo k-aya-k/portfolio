@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYANO KITAMUKI PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Kaisei+Opti&family=Noto+Sans+JP&family=Noto+Sans+Linear+B&family=Noto+Serif+JP:wght@400;500&family=Playfair+Display&family=Shippori+Antique&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <div class="loading" id="loading">
+        <iframe src="./loading.html"></iframe>
+    </div>
+    <header id="header">
+        <div class="top_box">
+            <div class="top_imgbox">
+                <img class="resp_none" src="./image/cat_bl.PNG" alt="topcat">
+                <img class="resp" src="./image/cat_blw.PNG" alt="topcat">
+            </div>
+            <div class="top_textbox">
+                <h1>AYANO</h1>
+                <h1>KITAMUKI</h1>
+                <h3>PORTFOLIO</h3>
+            </div>
+        </div>
+        <div class="menu_btn" id="target" onclick="activebtn()">
+            <img src="./image/hand_icon.PNG" alt="hand"><span></span><span></span>
+        </div>
+        <nav id="nav_target" class="nav_target">
+            <ul>
+                <li><a href="#work" onclick="nav_btn()">work</a></li>
+                <li><a href="#about" onclick="nav_btn()">about</a></li>
+                <li><a href="#contact" onclick="nav_btn()">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="work">
+            <h3><span class="under_line">work</span></h3>
+            <div class="w_container">
+                <div class="w_contentbox">
+                    <div class="w_content">
+                        <a href=" https://k-aya-k.github.io/kitakantou-aquarium/">
+                            <div class="w_content_img">
+                                <img src="./image/aquarium_pc.jpg" alt="aqua">
+                            </div>
+                            <div class="w_content_text">
+                                <p>creation time</p>
+                                <p class="center">36h</p>
+                                <p>topic</p>
+                                <p class="center topic_end">滑空の水族館</p>
+                                <p>4名でのチーム制作</p>
+                                <p>guidanceページ、ヘッダーアニメーションを担当</p>
+                                <p>複数人で制作する際のすり合わせの難しさを経験</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="w_content">
+                        <a href=" https://k-aya-k.github.io/kitamuki/">
+                            <div class="w_content_img">
+                                <img src="./image/school_pc.jpg" alt="school">
+                            </div>
+                            <div class="w_content_text">
+                                <p>creation time</p>
+                                <p class="center">36h</p>
+                                <p>topic</p>
+                                <p class="center topic_end">訓練校のHP</p>
+                                <p>個人制作</p>
+                                <p>元々のHPをもっと見やすく使いやすくするという課題</p>
+                                <p>字の大きさや配置など見やすさを意識して制作</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="w_contentbox">
+                    <div class="w_content">
+                        <a href="https://k-aya-k.github.io/self/">
+                            <div class="w_content_img">
+                                <img src="./image/self_pc.jpg" alt="self">
+                            </div>
+                            <div class="w_content_text">
+                                <p>creation time</p>
+                                <p class="center">33h</p>
+                                <p>topic</p>
+                                <p class="center topic_end">自己紹介サイト</p>
+                                <p>初めて作ったwebサイト</p>
+                                <p>HTML,cssを学び予習としてJSを使用</p>
+                                <p>見やすさより自分のやりたい事や動きを優先して制作</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="w_content">
+                        <a href="./figma.html">
+                            <div class="w_content_img">
+                                <img src="./image/figma_pc.jpg" alt="figma">
+                            </div>
+                            <div class="w_content_text">
+                                <p>制作時のレイアウト作成</p>
+                                <p class="center">Figma</p>
+                                <p>イラスト</p>
+                                <p class="center topic_end">ibisPaintX</p>
+                                <p>チーム制作の際にはフォントや配置を設定した</p>
+                                <p>コードを書き始める前にレイアウトを決めておくことの重要性を学んだ</p>
+                                <p>イラストはサイト作成に使うものを作成した物など</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h3><span class="under_line">about</span></h3>
+            <div class="a_container">
+                <div class="a_contentbox skill_area">
+                    <h4>skill</h4>
+                    <div class="a_skill">
+                        <div class="a_skillbox">
+                            <div class="skill_content">
+                                <div class="a_skill_title">
+                                    <h5>HTML</h5>
+                                </div>
+                                <div class="a_skill_icon">
+                                    <img src="./image/cat4.png" alt="skill4">
+                                </div>
+                            </div>
+                            <div class="skill_content">
+                                <div class="a_skill_title">
+                                    <h5>CSS</h5>
+                                </div>
+                                <div class="a_skill_icon">
+                                    <img src="./image/cat4.png" alt="skill4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a_skillbox">
+                            <div class="skill_content">
+                                <div class="a_skill_title">
+                                    <h5>Java<br>Script</h5>
+                                </div>
+                                <div class="a_skill_icon">
+                                    <img src="./image/cat3.png" alt="skill">
+                                </div>
+                            </div>
+                            <div class="skill_content">
+                                <div class="a_skill_title">
+                                    <h5>jQuery</h5>
+                                </div>
+                                <div class="a_skill_icon">
+                                    <img src="./image/cat2.png" alt="skill2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a_skillbox lastbox" id="lastbox">
+                            <div class="skill_content">
+                                <div class="a_skill_title">
+                                    <h5>Figma</h5>
+                                </div>
+                                <div class="a_skill_icon">
+                                    <img src="./image/cat3.png" alt="skill3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="a_contentbox">
+                    <div class="prof_box">
+                        <div class="a_imgbox">
+                            <img src="./image/prof.JPG" alt="prof">
+                        </div>
+                        <div class="resp">
+                            <h4>profile</h4>
+                            <p>1994年1月19日生まれ</p>
+                            <p>青森県出身</p>
+                            <p>現在夫と猫との3人で生活</p>
+                            <p>好きなものは猫とバイク</p>
+                        </div>
+                    </div>
+                    <div class="a_textbox">
+                        <div class="a_text resp_none">
+                            <h4>profile</h4>
+                            <p>1994年1月19日生まれ</p>
+                            <p>青森県出身</p>
+                            <p>現在夫と猫との3人で生活</p>
+                            <p>好きなものは猫とバイク</p>
+                        </div>
+                        <div class="a_text">
+                            <h4>career</h4>
+                            <ul class="timeline">
+                                <li>
+                                    <dl>
+                                        <dt>2012.4~2012.11</dt>
+                                        <dd><strong>医療法人社団晃山会 松江病院</strong>
+                                            病院の受付事務として新卒で入社。祖母の介護を理由に退職。</dd>
+                                    </dl>
+                                    <span class="border_line"></span>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>2013.4~2019.6</dt>
+                                        <dd><strong>有限会社 ファミリープラザろくのへ</strong>
+                                            精肉、鮮魚の専門店に入社。商品の作成から企画、接客など業務全般に従事。
+                                            結婚を機に退職。</dd>
+                                    </dl>
+                                    <span class="border_line"></span>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>2020.3~2023.6</dt>
+                                        <dl><strong>有限会社 XTND</strong>
+                                            雑貨とアパレルの販売員として入社。商品の発注・陳列、接客などに従事。
+                                            夫の転勤を理由に退職。</dl>
+                                    </dl>
+                                    <span class="border_line"></span>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>2023.8~現在</dt>
+                                        <dl><strong>北関東学院WEBフロントエンド構築科</strong>
+                                            北海道への引っ越しを経て現在勉強中。</dl>
+                                    </dl>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="contact_box">
+            <a href="mailto:sakano.05@gmail.com">
+                <div class="contact" id="contact">
+                    <p>contact</p>
+                </div>
+                <p class="mail">sakano.05@gmail.com</p>
+            </a>
+        </div>
+        <div class="text_area">
+            <div class="footer_titlebox">
+                <h2>AYANO</h2>
+                <h2>KITAMUKI</h2>
+                <h4>PORTFOLIO</h4>
+            </div>
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href="#header">top</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="#about">about</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="copy">
+            <h6>©AyanoKitamuki All rights reserved.</h6>
+        </div>
+    </footer>
+    <div class="returnbtn" id="return">
+        <div class="r_box">
+            <a href="#top"><img src="./image/return_icon.PNG" alt="return">
+                <p>^</p>
+                <p>^</p>
+                <p>^</p>
+            </a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
