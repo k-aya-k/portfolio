@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-    font-size: 11vw;
+    font-size:min(11vw,50px);
 }
 
 h3 {
@@ -32,7 +32,7 @@ h3 {
 }
 
 h4 {
-    font-size: 8vw;
+    font-size:min(8vw,32px);
 }
 
 h5 {
@@ -291,11 +291,12 @@ nav ul li a:hover::after {
 
 
 
+
 /* menu open */
 .menu_btn {
     background: rgba(194, 194, 194, 0.8);
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     border-radius: 20px;
     z-index: 9998;
     position: fixed;
@@ -306,6 +307,7 @@ nav ul li a:hover::after {
     right: 0;
     box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
     opacity: 0;
+    vertical-align: middle;
 }
 
 @keyframes menuFadeinAnime {
@@ -319,47 +321,77 @@ nav ul li a:hover::after {
     }
 }
 
-.menu_btn img {
+#black  {
     width: 50px;
+    transition: all .05s;
 }
 
-.menu_btn span {
-    display: inline-block;
-    width: 80%;
-    height: 3px;
-    background: black;
-    border-radius: 2px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+#gray {
+    width: 50px;
     transition: all 0.5s;
-    opacity: 0;
 }
 
 .active {
     border-bottom: 2px solid black;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+    background: black;
 }
 
-.active span:nth-child(2) {
-    transform: translateY(-6px) rotate(45deg);
-    width: 100%;
-    top: 36px;
-    opacity: 1;
-    left: 0;
+.active_black{
+    display: block;
+    animation: black_act .5s ease;
 }
 
-.active span:nth-child(3) {
-    transform: translateY(6px) rotate(-45deg);
-    width: 100%;
-    top: 25px;
-    left: 0;
-    opacity: 1;
+@keyframes black_act {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+.active_gray {
+    display: block;
+    animation: gray_act .5s ease;
 }
 
-.active img {
-    opacity: 0;
+@keyframes gray_act {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+.none_gray {
+    display: none;
+    animation: gray_none .5s ease;
 }
+
+@keyframes gray_none {
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+.none_black {
+    display: none;
+    animation: black_none .5s ease;
+}
+
+@keyframes black_none {
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
 
 .nav_active {
     position: fixed;
@@ -555,6 +587,10 @@ footer {
     justify-content: center;
 }
 
+.contact p{
+    font-size:min(4vw,24px);
+}
+
 .mail {
     font-size: 2vh;
     margin-right: 16px;
@@ -584,7 +620,7 @@ footer {
 .footer_nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 8vw;
+    font-size:min(8vw,40px);
 }
 
 .copy h6 {
@@ -843,6 +879,14 @@ footer {
     .footer_nav ul {
         flex-direction: column;
     }
+
+.footer_titlebox h2 {
+    font-size: 88px;
+}
+
+.footer_titlebox h4 {
+    font-size: 64px;
+}
 
     .copy h6 {
         position: absolute;

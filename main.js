@@ -1,6 +1,6 @@
-// loading
+loading
 window.onload = () => {  
-    setTimeout(classAdd,2000);
+    setTimeout(classAdd,1400);
 }
 
 const classAdd = () => {
@@ -54,8 +54,23 @@ const fadeMenuAnime = () => {
 
 // menu_btn open
 const activebtn = () => {
+    let black = document.getElementById("black");
+    let gray = document.getElementById("gray");
+
     document.getElementById('target').classList.toggle("active");
     document.getElementById('nav_target').classList.toggle("nav_active");
+
+    if(black.classList.contains("active_black")){
+        black.classList.remove("active_black");
+        black.classList.add("none_black");
+        gray.classList.remove("none_gray");
+        gray.classList.add("active_gray");
+    }else{
+        black.classList.add("active_black");
+        black.classList.remove("none_black");
+        gray.classList.add("none_gray");
+        gray.classList.remove("active_gray");
+    }
 };
 
 const nav_btn = () => {
@@ -70,7 +85,6 @@ $(document).click(function(event) {
         }
     }
 })
-
 
 // about
 function ScrollTimelineAnime(){
@@ -104,6 +118,8 @@ $(window).on('load', function(){
 	ScrollTimelineAnime();
     fadeMenuAnime();
     fadeReturnAnime();
+    document.getElementById("black").classList.add('active_black');
+    document.getElementById("gray").classList.add('none_gray');
 });
 
 $(window).scroll(function() {
